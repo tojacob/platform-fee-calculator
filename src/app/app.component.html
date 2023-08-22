@@ -1,0 +1,156 @@
+<section class="container p-4">
+  <div class="columns is-centered">
+    <div class="column is-half-tablet">
+      <div class="page__header">
+        <img src="assets/coin.png" alt="fee">
+        <h1 class="is-size-3 is-uppercase mt-4 mb-4 has-text-grey">Fee Calculator</h1>
+      </div>
+      <div class="page__form">
+        <div class="card">
+          <div class="card-content">
+            <!-- amount -->
+            <div class="field is-horizontal">
+              <div class="columns">
+                <div class="column is-5">
+                  <div class="field-label is-normal">
+                    <label class="label">Amount</label>
+                  </div>
+                </div>
+                <div class="column is-7">
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          [(ngModel)]="amountValue"
+                          (ngModelChange)="onChange()"
+                          class="input"
+                          type="number"
+                          inputmode="numeric"
+                          placeholder="Enter a value">
+                        <span class="icon is-small is-left">
+                          <span class="mdi mdi-plus"></span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fixed -->
+            <div class="field is-horizontal">
+              <div class="columns">
+                <div class="column is-5">
+                  <div class="field-label is-normal">
+                    <label class="label">Fixed rate</label>
+                  </div>
+                </div>
+                <div class="column is-7">
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          [(ngModel)]="fixedFeeValue"
+                          (ngModelChange)="onChange()"
+                          class="input"
+                          type="number"
+                          inputmode="numeric"
+                          placeholder="Enter a value">
+                        <span class="icon is-small is-left">
+                          <span class="mdi mdi-plus"></span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- dynamic -->
+            <div class="field is-horizontal">
+              <div class="columns">
+                <div class="column is-5">
+                  <div class="field-label is-normal">
+                    <label class="label">Dynamic rate</label>
+                  </div>
+                </div>
+                <div class="column is-7">
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          [(ngModel)]="dynamicFeeValue"
+                          (ngModelChange)="onChange()"
+                          class="input"
+                          type="number"
+                          inputmode="numeric"
+                          placeholder="Enter a value">
+                        <span class="icon is-small is-left">
+                          <span class="mdi mdi-percent"></span>.
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tax -->
+            <div class="field is-horizontal">
+              <div class="columns">
+                <div class="column is-5">
+                  <div class="field-label is-normal">
+                    <label class="label">Tax rate</label>
+                  </div>
+                </div>
+                <div class="column is-7">
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          [(ngModel)]="taxFeeValue"
+                          (ngModelChange)="onChange()"
+                          class="input"
+                          type="number"
+                          inputmode="numeric"
+                          placeholder="Enter a value">
+                        <span class="icon is-small is-left">
+                          <span class="mdi mdi-percent"></span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4 has-background-warning">
+          <div class="card-content">
+            <div class="columns mb-0">
+              <div class="column is-6">
+                <span class="is-block has-text-weight-bold has-text-right">Final amount</span>
+              </div>
+              <div class="column is-6">
+                {{total.amount}}
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-6">
+                <span class="is-block has-text-weight-bold has-text-right">Commission</span>
+              </div>
+              <div class="column is-6">
+                {{total.commission}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Jacob Samuel G.
+    </p>
+  </div>
+</footer>
