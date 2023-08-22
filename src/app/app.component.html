@@ -1,4 +1,4 @@
-<section class="container p-4">
+<section class="container p-4 mt-4">
   <div class="columns is-centered">
     <div class="column is-half-tablet">
       <div class="page__header">
@@ -10,13 +10,13 @@
           <div class="card-content">
             <!-- amount -->
             <div class="field is-horizontal">
-              <div class="columns">
-                <div class="column is-5">
+              <div class="columns is-mobile w-full">
+                <div class="column is-half">
                   <div class="field-label is-normal">
                     <label class="label">Amount</label>
                   </div>
                 </div>
-                <div class="column is-7">
+                <div class="column is-half">
                   <div class="field-body">
                     <div class="field">
                       <p class="control is-expanded has-icons-left">
@@ -38,13 +38,13 @@
             </div>
             <!-- fixed -->
             <div class="field is-horizontal">
-              <div class="columns">
-                <div class="column is-5">
+              <div class="columns is-mobile w-full">
+                <div class="column is-half">
                   <div class="field-label is-normal">
                     <label class="label">Fixed rate</label>
                   </div>
                 </div>
-                <div class="column is-7">
+                <div class="column is-half">
                   <div class="field-body">
                     <div class="field">
                       <p class="control is-expanded has-icons-left">
@@ -66,13 +66,13 @@
             </div>
             <!-- dynamic -->
             <div class="field is-horizontal">
-              <div class="columns">
-                <div class="column is-5">
+              <div class="columns is-mobile w-full">
+                <div class="column is-half">
                   <div class="field-label is-normal">
                     <label class="label">Dynamic rate</label>
                   </div>
                 </div>
-                <div class="column is-7">
+                <div class="column is-half">
                   <div class="field-body">
                     <div class="field">
                       <p class="control is-expanded has-icons-left">
@@ -94,13 +94,13 @@
             </div>
             <!-- tax -->
             <div class="field is-horizontal">
-              <div class="columns">
-                <div class="column is-5">
+              <div class="columns is-mobile w-full">
+                <div class="column is-half">
                   <div class="field-label is-normal">
                     <label class="label">Tax rate</label>
                   </div>
                 </div>
-                <div class="column is-7">
+                <div class="column is-half">
                   <div class="field-body">
                     <div class="field">
                       <p class="control is-expanded has-icons-left">
@@ -124,7 +124,7 @@
         </div>
         <div class="card mt-4 has-background-warning">
           <div class="card-content">
-            <div class="columns mb-0">
+            <div class="columns is-mobile mb-0">
               <div class="column is-6">
                 <span class="is-block has-text-weight-bold has-text-right">Final amount</span>
               </div>
@@ -132,7 +132,7 @@
                 {{total.amount}}
               </div>
             </div>
-            <div class="columns">
+            <div class="columns is-mobile">
               <div class="column is-6">
                 <span class="is-block has-text-weight-bold has-text-right">Commission</span>
               </div>
@@ -150,7 +150,9 @@
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      Jacob Samuel G.
+      <strong class="has-text-grey">Platform fee calculator</strong> by <a href="https://github.com/tojacob" target="_blank">Jacob Samuel</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY NC SA 4.0</a>.
     </p>
   </div>
 </footer>
